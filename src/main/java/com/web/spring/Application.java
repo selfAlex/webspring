@@ -14,4 +14,9 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
+	@GetMapping("/")
+	public String index() {
+		return "Index page";
+	}
+
 }
